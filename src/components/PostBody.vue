@@ -1,9 +1,9 @@
 <template>
-  <h1>Hello</h1>
+  <h1>PostBody</h1>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld' 
+    name: 'PostBody'
   }
 </script>
