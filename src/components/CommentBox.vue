@@ -1,6 +1,6 @@
 <template>
   <div class="comment-box">
-    <div :key="comment.id" v-for="comment in comments">
+    <div :key="comment.id" v-for="comment in reversedComments">
       {{ comment.body }}
     </div>
   </div>
@@ -20,7 +20,10 @@
           body: '评论2'
         }
       ]   
-    })
+    }),
+    computed: {
+      reversedComments() { return this.comments.reverse() }
+    }
   }
 </script>
 
