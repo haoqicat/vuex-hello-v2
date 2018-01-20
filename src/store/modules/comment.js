@@ -15,11 +15,11 @@ const mutations = {
 
 const actions = {
   addComment({ commit }, { comment }) {
-    const { body } = comment
     const uri = 'http://localhost:3008/comments'
-    axios.post(uri, { body }).then(
+    axios.post(uri, comment).then(
       res => {
-        console.log('res.data', res.data)
+        const comment = res.data
+        commit('addComment', comment)
       }
     )
   },
