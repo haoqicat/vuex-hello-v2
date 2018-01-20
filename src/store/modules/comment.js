@@ -15,7 +15,13 @@ const mutations = {
 
 const actions = {
   addComment({ commit }, { comment }) {
-    commit('addComment', comment)
+    const { body } = comment
+    const uri = 'http://localhost:3008/comments'
+    axios.post(uri, { body }).then(
+      res => {
+        console.log('res.data', res.data)
+      }
+    )
   },
   loadComments({ commit }) {
     const uri = 'http://localhost:3008/comments'
