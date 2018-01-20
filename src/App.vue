@@ -11,6 +11,7 @@ export default {
   name: 'app',
   created: function () {
     this.$store.dispatch({ type: 'loadComments' })
+    this.$store.dispatch({ type: 'loadPosts' })
   }
 }
 </script>
