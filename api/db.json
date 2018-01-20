@@ -11,24 +11,19 @@
   ],
   "comments": [
     {
-      "id": "1",
-      "body": "评论1"
-    },
-    {
-      "id": "2",
-      "body": "评论2"
-    },
-    {
       "body": "hello server",
-      "id": "ryWwKQxSf"
+      "id": "ryWwKQxSf",
+      "post": "1"
     },
     {
       "body": "yes",
-      "id": "ry2uF7xSz"
+      "id": "ry2uF7xSz",
+      "post": "1"
     },
     {
       "body": "cool",
-      "id": "ryW_q7lSz"
+      "id": "ryW_q7lSz",
+      "post": "2"
     }
   ]
 }
