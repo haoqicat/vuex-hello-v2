@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <Post />
+  <div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,10 +8,7 @@
 import Post from './components/Post'
 
 export default {
-  name: 'app',
-  components: {
-    Post
-  }
+  name: 'app'
 }
 </script>
 
