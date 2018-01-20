@@ -1,7 +1,7 @@
 <template>
   <div class="post">
     <div class="upper">
-      <PostBody title="Git 技巧" />
+      <PostBody :title="title" />
     </div>
     <div class="bottom">
       <CommentBox />
@@ -18,7 +18,10 @@
     components: {
       PostBody,
       CommentBox
-    }
+    },
+    data: () => ({
+      title: 'React 技巧'
+    })
   }
 </script>
 
