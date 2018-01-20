@@ -1,7 +1,9 @@
 <template>
   <div class="comment-box">
-    <input v-model="message" placeholder="请填写评论" />
-    <button @click="submitComment">提交</button>
+    <div class="comment-form">
+      <input v-model="message" placeholder="请填写评论" />
+      <button @click="submitComment">提交</button>
+    </div>
     <div :key="comment.id" v-for="comment in reversedComments">
       {{ comment.body }}
     </div>
@@ -47,5 +49,19 @@
     min-height: 30vh;
     margin: 20px auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .comment-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .comment-form input {
+    flex-grow: 1;
+  }
+
+  .comment-form button {
+    margin-left: 5px;
   }
 </style>
