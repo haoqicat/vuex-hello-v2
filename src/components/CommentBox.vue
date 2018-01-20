@@ -26,7 +26,7 @@
           id: (this.comments.length + 1).toString(),
           body: this.message
         }
-        this.comments.push(comment)
+        this.$store.commit('addComment', comment)
         this.message = ''
       }
     }

@@ -11,6 +11,13 @@ const state = {
   ]
 }
 
+const mutations = {
+  addComment(state, comment) {
+    state.all.push(comment)
+  }
+}
+
 export default {
-  state
+  state,
+  mutations
 }
