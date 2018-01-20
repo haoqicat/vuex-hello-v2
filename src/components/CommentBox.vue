@@ -1,5 +1,6 @@
 <template>
   <div class="comment-box">
+    <button @click="submitComment">提交</button>
     <div :key="comment.id" v-for="comment in reversedComments">
       {{ comment.body }}
     </div>
@@ -23,6 +24,11 @@
     }),
     computed: {
       reversedComments() { return this.comments.reverse() }
+    },
+    methods: {
+      submitComment () {
+        console.log('submitComment')
+      }
     }
   }
 </script>
