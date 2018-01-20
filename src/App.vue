@@ -8,7 +8,10 @@
 import Post from './components/Post'
 
 export default {
-  name: 'app'
+  name: 'app',
+  created: function () {
+    this.$store.dispatch({ type: 'loadComments' })
+  }
 }
 </script>
 
