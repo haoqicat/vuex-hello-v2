@@ -17,7 +17,14 @@ const mutations = {
   }
 }
 
+const actions = {
+  addComment({ commit }, { comment }) {
+    commit('addComment', comment)
+  }
+}
+
 export default {
   state,
-  mutations
+  mutations,
+  actions
 }

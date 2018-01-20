@@ -26,7 +26,7 @@
           id: (this.comments.length + 1).toString(),
           body: this.message
         }
-        this.$store.commit('addComment', comment)
+        this.$store.dispatch({ type: 'addComment', comment })
         this.message = ''
       }
     }
