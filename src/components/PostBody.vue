@@ -1,13 +1,13 @@
 <template>
   <div class="post-body">
-     {{ title }}
+     {{ postId }}
   </div>
 </template>
 
 <script>
   export default {
     name: 'PostBody',
-    props: ['title']
+    props: ['postId']
   }
 </script>
 

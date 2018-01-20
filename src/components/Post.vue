@@ -1,7 +1,7 @@
 <template>
   <div class="post">
     <div class="upper">
-      <PostBody :title="title" />
+      <PostBody :postId="postId" />
     </div>
     <div class="bottom">
       <CommentBox />
@@ -21,7 +21,12 @@
     },
     data: () => ({
       title: 'React 技巧'
-    })
+    }),
+    computed: {
+      postId: function () {
+        return this.$route.params.id
+      }
+    }
   }
 </script>
 
